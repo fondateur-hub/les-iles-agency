@@ -1,176 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LES ÎLES AGENCY — Boutique officielle</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LES ÎLES AGENCY — Collection Officielle 2025</title>
   <style>
-    :root {
-      --or: #d4af37;
-      --noir: #0b0b0b;
-      --blanc: #ffffff;
-      --fond-transparent: rgba(0, 0, 0, 0.6);
-    }
-
+    /* ----------- STYLE GLOBAL ----------- */
     body {
       margin: 0;
-      font-family: "Poppins", sans-serif;
-      color: var(--blanc);
-      background: url("assets/couverture.jpg") center/cover no-repeat fixed;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: url('assets.couverture.jpg') center/cover no-repeat fixed;
+      backdrop-filter: blur(2px);
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: var(--fond-transparent);
-      padding: 15px 30px;
-      position: sticky;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 25px;
+      position: fixed;
       top: 0;
-      backdrop-filter: blur(5px);
+      width: 100%;
       z-index: 10;
     }
 
     header img {
-      height: 60px;
+      height: 50px;
+      border-radius: 10px;
     }
 
     nav a {
-      margin: 0 15px;
-      color: var(--or);
+      color: #FFD700;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: 600;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #fff;
     }
 
+    /* ----------- SECTION HERO ----------- */
     .hero {
       text-align: center;
-      padding: 120px 20px;
-      background-color: var(--fond-transparent);
+      padding: 180px 20px 100px;
+      background: rgba(0, 0, 0, 0.45);
+      animation: fadeIn 2s ease;
     }
 
     .hero h1 {
-      font-size: 48px;
-      color: var(--or);
+      font-size: 2.5em;
+      color: #FFD700;
+      text-shadow: 0 0 20px #FFD700;
       margin-bottom: 10px;
     }
 
-    .hero h2 {
-      font-size: 24px;
-      font-weight: 400;
-      color: var(--blanc);
-      margin-bottom: 25px;
+    .hero p {
+      font-size: 1.2em;
+      color: #fff;
+      margin-bottom: 20px;
     }
 
     .hero button {
-      background-color: var(--or);
+      background: #FFD700;
+      color: black;
       border: none;
-      color: var(--noir);
-      padding: 15px 40px;
-      font-size: 18px;
+      padding: 15px 30px;
+      font-size: 1em;
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
       transition: all 0.3s ease;
     }
 
     .hero button:hover {
-      background-color: #b8942c;
+      background: white;
+      color: #B8860B;
       transform: scale(1.05);
     }
 
+    /* ----------- SECTION BOUTIQUE ----------- */
     .boutique {
-      padding: 60px 20px;
       text-align: center;
-      background-color: var(--fond-transparent);
+      padding: 100px 20px;
+      background: rgba(0, 0, 0, 0.75);
     }
 
     .boutique h2 {
-      color: var(--or);
-      font-size: 36px;
-      margin-bottom: 40px;
+      font-size: 2em;
+      color: #FFD700;
+      text-shadow: 0 0 15px #FFD700;
+      margin-bottom: 50px;
     }
 
     .produits {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      gap: 25px;
     }
 
     .produit {
-      background-color: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease;
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     }
 
     .produit:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
     }
 
     .produit img {
       width: 100%;
-      height: 280px;
-      object-fit: cover;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 15px;
     }
 
     .produit h3 {
-      margin: 10px 0;
-      color: var(--or);
+      color: #FFD700;
+      margin-bottom: 10px;
     }
 
-    .produit p {
-      color: var(--blanc);
-      font-size: 14px;
+    .paypal {
+      margin-top: 50px;
+    }
+
+    .paypal button {
+      background: #FFD700;
+      color: black;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    .paypal button:hover {
+      background: white;
+      color: #B8860B;
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      background-color: var(--fond-transparent);
-      color: var(--or);
-      font-size: 14px;
+      color: #FFD700;
+      font-size: 0.9em;
+      background: rgba(0, 0, 0, 0.6);
     }
 
-    .paypal-btn {
-      margin-top: 20px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .paypal-btn a {
-      background-color: var(--or);
-      color: var(--noir);
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-    .paypal-btn a:hover {
-      background-color: #b8942c;
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2em; }
+      .produit { width: 85%; }
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <img src="assets/Logo.png" alt="Logo Les Îles Agency">
     <nav>
       <a href="#boutique">Boutique</a>
-      <a href="#a-propos">À propos</a>
+      <a href="#apropos">À propos</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <h1>LES ÎLES AGENCY 2025</h1>
-    <h2>La fierté des îles, l’élégance à ton image</h2>
+    <p>La fierté des îles, l'élégance à ton image 🌴</p>
     <button onclick="window.location.href='#boutique'">Découvrir la collection</button>
   </section>
 
@@ -178,42 +192,45 @@
     <h2>Boutique Officielle</h2>
     <div class="produits">
       <div class="produit">
-        <img src="assets/produits/sweet-rouge.jpg" alt="Sweat Rouge">
+        <img src="assets.produits.sweet-rouge.jpg" alt="Sweat Rouge">
         <h3>Sweat Rouge</h3>
         <p>Édition 2025 – Style Îles Agency</p>
       </div>
+
       <div class="produit">
-        <img src="assets/produits/crea-noir-or.jpg" alt="Créa Noir & Or">
+        <img src="assets.produits.crea-noir-or.jpg" alt="Créa Noir & Or">
         <h3>Créa Noir & Or</h3>
         <p>Élégance dorée, 100% authenticité</p>
       </div>
+
       <div class="produit">
-        <img src="assets/produits/casquette-noir.jpg" alt="Casquette Noir">
+        <img src="assets.produits.casquette-noir.jpg" alt="Casquette Noir">
         <h3>Casquette Noir</h3>
         <p>Un style unique signé Les Îles</p>
       </div>
+
       <div class="produit">
-        <img src="assets/produits/chemise-noir.jpg" alt="Chemise Noir">
+        <img src="assets.produits.chemise-noir.jpg" alt="Chemise Noir">
         <h3>Chemise Noir</h3>
         <p>Classe tropicale et raffinée</p>
       </div>
+
       <div class="produit">
-        <img src="assets/produits/mina-queen-official.jpg" alt="Mina Queen">
+        <img src="assets.produit.mina-queen-official.jpg" alt="Mina Queen Official">
         <h3>Mina Queen Official</h3>
         <p>Collection Reine des Îles 2025</p>
       </div>
     </div>
 
-    <div class="paypal-btn">
-      <a href="https://www.paypal.com/paypalme/fondateurilesacencylivecuisto" target="_blank">
+    <div class="paypal">
+      <button onclick="window.open('https://www.paypal.com/paypalme/fondateurilesacencylivecuisto','_blank')">
         💳 Commander via PayPal
-      </a>
+      </button>
     </div>
   </section>
 
   <footer>
     © 2025 LES ÎLES AGENCY — Tous droits réservés
   </footer>
-
 </body>
 </html>
