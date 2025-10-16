@@ -5,32 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LES ÎLES AGENCY — Collection Officielle 2025</title>
   <style>
-    /* ---------- STYLE GLOBAL ---------- */
+    /* ----------- STYLE GLOBAL ----------- */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: white;
-      background: url('assets/couverture.jpg') center/cover no-repeat fixed;
+      background: url('assets.couverture.jpg') center/cover no-repeat fixed;
       backdrop-filter: blur(2px);
-      animation: fadeIn 1.5s ease;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 25px;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 10;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      backdrop-filter: blur(8px);
     }
 
     header img {
-      height: 55px;
+      height: 50px;
       border-radius: 10px;
     }
 
@@ -39,53 +36,44 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: 600;
-      transition: 0.3s;
+      transition: color 0.3s;
     }
 
     nav a:hover {
       color: #fff;
-      text-shadow: 0 0 10px #FFD700;
     }
 
-    /* ---------- SECTION HERO ---------- */
+    /* ----------- SECTION HERO ----------- */
     .hero {
       text-align: center;
-      padding: 180px 20px 120px;
+      padding: 180px 20px 100px;
       background: rgba(0, 0, 0, 0.45);
+      animation: fadeIn 2s ease;
     }
 
     .hero h1 {
-      font-size: 3em;
-      background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200%;
-      animation: shine 4s linear infinite;
-      text-shadow: 0 0 20px rgba(255,215,0,0.6);
-      margin-bottom: 15px;
-    }
-
-    @keyframes shine {
-      0% { background-position: -200px; }
-      100% { background-position: 200px; }
+      font-size: 2.5em;
+      color: #FFD700;
+      text-shadow: 0 0 20px #FFD700;
+      margin-bottom: 10px;
     }
 
     .hero p {
       font-size: 1.2em;
       color: #fff;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     .hero button {
       background: #FFD700;
       color: black;
       border: none;
-      padding: 15px 35px;
+      padding: 15px 30px;
       font-size: 1em;
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 20px rgba(255,215,0,0.6);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
       transition: all 0.3s ease;
     }
 
@@ -95,7 +83,7 @@
       transform: scale(1.05);
     }
 
-    /* ---------- SECTION BOUTIQUE ---------- */
+    /* ----------- SECTION BOUTIQUE ----------- */
     .boutique {
       text-align: center;
       padding: 100px 20px;
@@ -105,8 +93,8 @@
     .boutique h2 {
       font-size: 2em;
       color: #FFD700;
-      text-shadow: 0 0 20px #FFD700;
-      margin-bottom: 40px;
+      text-shadow: 0 0 15px #FFD700;
+      margin-bottom: 50px;
     }
 
     .produits {
@@ -117,30 +105,30 @@
     }
 
     .produit {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       padding: 20px;
       width: 260px;
       text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 0 15px rgba(255,215,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     }
 
     .produit:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 30px rgba(255,215,0,0.7);
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
     }
 
     .produit img {
       width: 100%;
       height: auto;
       border-radius: 15px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .produit h3 {
       color: #FFD700;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .paypal {
@@ -156,14 +144,12 @@
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 20px rgba(255,215,0,0.6);
-      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     }
 
     .paypal button:hover {
       background: white;
       color: #B8860B;
-      transform: scale(1.05);
     }
 
     footer {
@@ -171,16 +157,16 @@
       padding: 30px;
       color: #FFD700;
       font-size: 0.9em;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.6);
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(40px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2.3em; }
+      .hero h1 { font-size: 2em; }
       .produit { width: 85%; }
     }
   </style>
@@ -206,31 +192,31 @@
     <h2>Boutique Officielle</h2>
     <div class="produits">
       <div class="produit">
-        <img src="assets/produits/sweet-rouge.jpg" alt="Sweat Rouge">
+        <img src="assets.produits.sweet-rouge.jpg" alt="Sweat Rouge">
         <h3>Sweat Rouge</h3>
         <p>Édition 2025 – Style Îles Agency</p>
       </div>
 
       <div class="produit">
-        <img src="assets/produits/crea-noir-or.jpg" alt="Créa Noir & Or">
+        <img src="assets.produits.crea-noir-or.jpg" alt="Créa Noir & Or">
         <h3>Créa Noir & Or</h3>
         <p>Élégance dorée, 100% authenticité</p>
       </div>
 
       <div class="produit">
-        <img src="assets/produits/casquette-noir.jpg" alt="Casquette Noir">
+        <img src="assets.produits.casquette-noir.jpg" alt="Casquette Noir">
         <h3>Casquette Noir</h3>
         <p>Un style unique signé Les Îles</p>
       </div>
 
       <div class="produit">
-        <img src="assets/produits/chemise-noir.jpg" alt="Chemise Noir">
+        <img src="assets.produits.chemise-noir.jpg" alt="Chemise Noir">
         <h3>Chemise Noir</h3>
         <p>Classe tropicale et raffinée</p>
       </div>
 
       <div class="produit">
-        <img src="assets/produits/mina-queen-official.jpg" alt="Mina Queen Official">
+        <img src="assets.produit.mina-queen-official.jpg" alt="Mina Queen Official">
         <h3>Mina Queen Official</h3>
         <p>Collection Reine des Îles 2025</p>
       </div>
