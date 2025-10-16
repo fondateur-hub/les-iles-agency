@@ -205,38 +205,37 @@
     <button onclick="window.location.href='#boutique'">Découvrir la collection</button>
   </section>
 
-  <section id="boutique" class="boutique">
-    <h2>Boutique Officielle</h2>
-    <div class="produits">
-      <div class="produit">
-        <img src="assets.produits.sweet-rouge.jpg" alt="Sweat Rouge">
-        <h3>Sweat Rouge</h3>
-        <p>Édition 2025 – Style Îles Agency</p>
-      </div>
+ <!-- 🩸 SWEET ROUGE -->
+<div class="produit" style="text-align:center; margin-bottom:40px;">
+  <img src="assets/sweet-rouge.jpg" alt="Sweet Rouge" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
+  <h3 style="color:gold; margin-top:10px;">Sweet Rouge</h3>
+  <p style="font-weight:bold; color:#FFD700;">Prix : 49,99 €</p>
+  <p style="color:white;">Édition premium – coupe moderne, tissu doux et confortable.</p>
+</div>
 
-      <div class="produit">
-        <img src="assets.produits.crea-noir-or.jpg" alt="Créa Noir & Or">
-        <h3>Créa Noir & Or</h3>
-        <p>Élégance dorée, 100% authenticité</p>
-      </div>
+<!-- ⚫ CREA NOIR & OR -->
+<div class="produit" style="text-align:center; margin-bottom:40px;">
+  <img src="assets/crea-noir-or.jpg" alt="Crea Noir & Or" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
+  <h3 style="color:gold; margin-top:10px;">Crea Noir & Or</h3>
+  <p style="font-weight:bold; color:#FFD700;">Prix : 14,99 €</p>
+  <p style="color:white;">Style minimaliste avec détails dorés élégants.</p>
+</div>
 
-      <div class="produit">
-        <img src="assets.produits.casquette-noir.jpg" alt="Casquette Noir">
-        <h3>Casquette Noir</h3>
-        <p>Un style unique signé Les Îles</p>
-      </div>
+<!-- 🧢 CASQUETTE NOIR -->
+<div class="produit" style="text-align:center; margin-bottom:40px;">
+  <img src="assets/casquette-noir.jpg" alt="Casquette Noir" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
+  <h3 style="color:gold; margin-top:10px;">Casquette Noir</h3>
+  <p style="font-weight:bold; color:#FFD700;">Prix : 17,99 €</p>
+  <p style="color:white;">Casquette officielle Les Îles Agency – édition 2025.</p>
+</div>
 
-      <div class="produit">
-        <img src="assets.produits.chemise-noir.jpg" alt="Chemise Noir">
-        <h3>Chemise Noir</h3>
-        <p>Classe tropicale et raffinée</p>
-      </div>
-
-      <div class="produit">
-        <img src="assets.produit.mina-queen-official.jpg" alt="Mina Queen Official">
-        <h3>Mina Queen Official</h3>
-        <p>Collection Reine des Îles 2025</p>
-      </div>
+<!-- 👨‍🍳 CHEMISE CUISINIER -->
+<div class="produit" style="text-align:center; margin-bottom:40px;">
+  <img src="assets/chemise-cuisinier.jpg" alt="Chemise Cuisinier" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
+  <h3 style="color:gold; margin-top:10px;">Chemise Cuisinier</h3>
+  <p style="font-weight:bold; color:#FFD700;">Prix : 59,99 €</p>
+  <p style="color:white;">Chemise professionnelle brodée – design exclusif Les Îles Agency.</p>
+</div>
     </div>
     <!-- 🔽 Début de la section personnalisation 🔽 -->
 <div class="options-produit" style="text-align:center; margin-bottom:20px;">
