@@ -12,20 +12,21 @@
       color: white;
       background: url('assets/couverture.jpg') center/cover no-repeat fixed;
       backdrop-filter: blur(2px);
-      animation: fadeIn 2s ease;
+      animation: fadeIn 1.5s ease;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px 25px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 10;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
     }
 
     header img {
@@ -49,7 +50,7 @@
     /* ---------- SECTION HERO ---------- */
     .hero {
       text-align: center;
-      padding: 180px 20px 100px;
+      padding: 180px 20px 120px;
       background: rgba(0, 0, 0, 0.45);
     }
 
@@ -58,8 +59,10 @@
       background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-size: 200%;
       animation: shine 4s linear infinite;
-      text-shadow: 0 0 20px rgba(255,215,0,0.7);
+      text-shadow: 0 0 20px rgba(255,215,0,0.6);
+      margin-bottom: 15px;
     }
 
     @keyframes shine {
@@ -70,7 +73,7 @@
     .hero p {
       font-size: 1.2em;
       color: #fff;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .hero button {
@@ -82,7 +85,7 @@
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      box-shadow: 0 0 20px rgba(255,215,0,0.6);
       transition: all 0.3s ease;
     }
 
@@ -203,31 +206,31 @@
     <h2>Boutique Officielle</h2>
     <div class="produits">
       <div class="produit">
-        <img src="assets.produits.sweet-rouge.jpg" alt="Sweat Rouge">
+        <img src="assets/produits/sweet-rouge.jpg" alt="Sweat Rouge">
         <h3>Sweat Rouge</h3>
         <p>Édition 2025 – Style Îles Agency</p>
       </div>
 
       <div class="produit">
-        <img src="assets.produits.crea-noir-or.jpg" alt="Créa Noir & Or">
+        <img src="assets/produits/crea-noir-or.jpg" alt="Créa Noir & Or">
         <h3>Créa Noir & Or</h3>
         <p>Élégance dorée, 100% authenticité</p>
       </div>
 
       <div class="produit">
-        <img src="assets.produits.casquette-noir.jpg" alt="Casquette Noir">
+        <img src="assets/produits/casquette-noir.jpg" alt="Casquette Noir">
         <h3>Casquette Noir</h3>
         <p>Un style unique signé Les Îles</p>
       </div>
 
       <div class="produit">
-        <img src="assets.produits.chemise-noir.jpg" alt="Chemise Noir">
+        <img src="assets/produits/chemise-noir.jpg" alt="Chemise Noir">
         <h3>Chemise Noir</h3>
         <p>Classe tropicale et raffinée</p>
       </div>
 
       <div class="produit">
-        <img src="assets.produit.mina-queen-official.jpg" alt="Mina Queen Official">
+        <img src="assets/produits/mina-queen-official.jpg" alt="Mina Queen Official">
         <h3>Mina Queen Official</h3>
         <p>Collection Reine des Îles 2025</p>
       </div>
