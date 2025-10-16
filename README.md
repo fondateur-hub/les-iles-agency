@@ -245,7 +245,25 @@
       </button>
     </div>
   </section>
+<section id="apropos" style="padding: 60px 20px; text-align: center; color: white;">
+  <h2 style="color: gold; font-size: 2em; margin-bottom: 10px;">À propos</h2>
+  <p style="max-width: 600px; margin: auto; font-size: 1.1em; line-height: 1.6;">
+    <b>LES ÎLES AGENCY</b> est une marque née de la passion des îles et de l’élégance tropicale.
+    Notre mission est de mettre en avant la fierté et le style unique des îles
+    à travers des collections modernes, authentiques et haut de gamme.
+    Chaque création représente l’esprit, la chaleur et la beauté des îles 🌺.
+  </p>
+</section>
 
+<section id="contact" style="padding: 60px 20px; text-align: center; color: white;">
+  <h2 style="color: gold; font-size: 2em; margin-bottom: 10px;">Contact</h2>
+  <p style="font-size: 1.1em;">📩 Email :
+    <a href="mailto:les.iles.agency.corse@gmail.com" style="color: gold; text-decoration: none;">
+      les.iles.agency.corse@gmail.com
+    </a>
+  </p>
+  <p style="font-size: 1.1em;">📍 Basée à <b>La Réunion</b> — disponible dans toute la France et les DOM 🇫🇷</p>
+</section>
   <footer>
     © 2025 LES ÎLES AGENCY — Tous droits réservés
   </footer>
