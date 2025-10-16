@@ -252,12 +252,15 @@
   </select>
 
   <!-- Couleur -->
-  <label for="couleur" style="display:block; margin-top:10px;">Couleur :</label>
-  <select id="couleur" style="padding:8px; border-radius:8px; margin-top:5px;">
-    <option value="noir">Noir</option>
-    <option value="blanc">Blanc</option>
-    <option value="or">Or</option>
-  </select>
+<label for="couleur" style="display:block; margin-top:10px;">Couleur :</label>
+<select id="couleur" style="padding:8px; border-radius:8px; margin-top:5px;">
+  <option value="blanc">Blanc</option>
+  <option value="noir">Noir</option>
+  <option value="rouge">Rouge</option>
+  <option value="bleu">Bleu</option>
+  <option value="rose">Rose</option>
+  <option value="or">Or</option>
+</select>
 
   <!-- Texte personnalisé -->
   <label for="perso" style="display:block; margin-top:10px;">Texte personnalisé (facultatif) :</label>
