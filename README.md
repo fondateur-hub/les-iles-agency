@@ -238,10 +238,40 @@
         <p>Collection Reine des Îles 2025</p>
       </div>
     </div>
+    <!-- 🔽 Début de la section personnalisation 🔽 -->
+<div class="options-produit" style="text-align:center; margin-bottom:20px;">
+  <h3 style="color: gold;">Personnalise ton article 👕</h3>
 
- <button onclick="window.open('https://paypal.me/lesilesagency','_blank')">
+  <!-- Taille -->
+  <label for="taille" style="display:block; margin-top:10px;">Taille :</label>
+  <select id="taille" style="padding:8px; border-radius:8px; margin-top:5px;">
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+  </select>
+
+  <!-- Couleur -->
+  <label for="couleur" style="display:block; margin-top:10px;">Couleur :</label>
+  <select id="couleur" style="padding:8px; border-radius:8px; margin-top:5px;">
+    <option value="noir">Noir</option>
+    <option value="blanc">Blanc</option>
+    <option value="or">Or</option>
+  </select>
+
+  <!-- Texte personnalisé -->
+  <label for="perso" style="display:block; margin-top:10px;">Texte personnalisé (facultatif) :</label>
+  <input id="perso" type="text" placeholder="Ex : Reine des Îles 👑" 
+         style="padding:8px; border-radius:8px; width:80%; margin-top:5px; border:1px solid gold; background:rgba(255,255,255,0.1); color:white;">
+
+  <!-- Bouton commander -->
+  <button 
+    onclick="window.open('https://paypal.me/lesilesagency','_blank')" 
+    style="margin-top:20px; background:gold; color:black; border:none; padding:12px 25px; border-radius:25px; font-weight:bold; cursor:pointer; box-shadow:0 0 15px gold; transition:all 0.3s;">
     💳 Commander via PayPal
   </button>
+</div>
+<!-- 🔼 Fin de la section personnalisation 🔼 -->
 
   <div style="text-align:center; margin-top:20px;">
     <p>Ou scanne ce QR code :</p>
