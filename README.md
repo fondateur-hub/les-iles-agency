@@ -242,15 +242,24 @@
 <div class="options-produit" style="text-align:center; margin-bottom:20px;">
   <h3 style="color: gold;">Personnalise ton article 👕</h3>
 
-  <!-- Taille -->
-  <label for="taille" style="display:block; margin-top:10px;">Taille :</label>
-  <select id="taille" style="padding:8px; border-radius:8px; margin-top:5px;">
-    <option value="S">S</option>
-    <option value="M">M</option>
-    <option value="L">L</option>
-    <option value="XL">XL</option>
-  </select>
-
+<!-- Taille -->
+<label for="taille" style="display:block; margin-top:10px;">Taille :</label>
+<select id="taille" style="padding:8px; border-radius:8px; margin-top:5px;">
+  <option value="3ans">3 ans</option>
+  <option value="4ans">4 ans</option>
+  <option value="6ans">6 ans</option>
+  <option value="8ans">8 ans</option>
+  <option value="10ans">10 ans</option>
+  <option value="12ans">12 ans</option>
+  <option value="14ans">14 ans</option>
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+  <option value="3XL">3XL</option>
+</select>
   <!-- Couleur -->
 <label for="couleur" style="display:block; margin-top:10px;">Couleur :</label>
 <select id="couleur" style="padding:8px; border-radius:8px; margin-top:5px;">
