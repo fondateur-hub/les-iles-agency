@@ -6,14 +6,16 @@
   <title>LES ÎLES AGENCY — Collection Officielle 2025</title>
   <style>
     /* ---------- STYLE GLOBAL ---------- */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      background: url('assets/couverture.jpg') center/cover no-repeat fixed;
-      backdrop-filter: blur(2px);
-      animation: fadeIn 2s ease;
-    }
+  body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url('assets/couverture.jpg') center/cover no-repeat fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 2s ease;
+}
 
     header {
       display: flex;
