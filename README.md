@@ -239,10 +239,18 @@
       </div>
     </div>
 
-    <div class="paypal">
-      <button onclick="window.open('https://www.paypal.com/paypalme/fondateurilesacencylivecuisto','_blank')">
-        💳 Commander via PayPal
-      </button>
+ <button onclick="window.open('https://paypal.me/lesilesagency','_blank')">
+    💳 Commander via PayPal
+  </button>
+
+  <div style="text-align:center; margin-top:20px;">
+    <p>Ou scanne ce QR code :</p>
+    <img src="https://i.ibb.co/5rkymrH/paypal-les-iles-agency.png" 
+         alt="QR Code PayPal Les Îles Agency" 
+         width="200" 
+         style="border-radius:12px; box-shadow:0 0 25px gold;">
+  </div>
+</div>
     </div>
   </section>
 <section id="apropos" style="padding: 60px 20px; text-align: center; color: white;">
