@@ -281,7 +281,41 @@
     style="margin-top:20px; background:gold; color:black; border:none; padding:12px 25px; border-radius:25px; font-weight:bold; cursor:pointer; box-shadow:0 0 15px gold; transition:all 0.3s;">
     💳 Commander via PayPal
   </button>
+<!-- 🎨 Section flocage personnalisé -->
+<div id="flocage" style="text-align:center; margin-top:40px;">
+  <h2 style="color:gold;">🩶 Personnalise ton flocage 🩶</h2>
+
+  <p style="color:white;">Entre ton texte personnalisé :</p>
+  <input id="texteFlocage" type="text" placeholder="Ex : Reine des Îles 💫"
+    style="padding:8px; border-radius:10px; width:80%; border:1px solid gold; background:rgba(255,255,255,0.1); color:white;">
+
+  <p style="margin-top:20px; color:white;">Choisis ton modèle :</p>
+
+  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:15px;">
+    <img src="https://i.ibb.co/WcRtVsf/flocage-blanc.png" alt="Flocage Blanc"
+      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
+      onclick="selectionnerFlocage(this)">
+    <img src="https://i.ibb.co/jrY4m5J/flocage-noir.png" alt="Flocage Noir"
+      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
+      onclick="selectionnerFlocage(this)">
+    <img src="https://i.ibb.co/6RmhkKb/flocage-or.png" alt="Flocage Or"
+      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
+      onclick="selectionnerFlocage(this)">
+  </div>
+
+  <p id="modeleChoisi" style="color:gold; margin-top:15px;"></p>
 </div>
+
+<script>
+function selectionnerFlocage(img) {
+  // Enlève la sélection des autres images
+  document.querySelectorAll('#flocage img').forEach(el => el.style.border = '2px solid transparent');
+  // Ajoute une bordure dorée à celle sélectionnée
+  img.style.border = '2px solid gold';
+  // Affiche le nom du modèle choisi
+  document.getElementById('modeleChoisi').innerText = "Modèle choisi : " + img.alt;
+}
+</script>
 <!-- 🔼 Fin de la section personnalisation 🔼 -->
 
   <div style="text-align:center; margin-top:20px;">
