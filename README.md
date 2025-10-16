@@ -6,32 +6,27 @@
   <title>LES ÎLES AGENCY — Collection Officielle 2025</title>
   <style>
     /* ---------- STYLE GLOBAL ---------- */
- body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  background: 
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url('assets/couverture.jpg') center/cover no-repeat fixed;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  animation: fadeIn 2s ease;
-}h1, h2 {
-  text-shadow: 0 0 10px gold, 0 0 25px goldenrod, 0 0 35px gold;
- }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: url('assets/couverture.jpg') center/cover no-repeat fixed;
+      backdrop-filter: blur(2px);
+      animation: fadeIn 1.5s ease;
+    }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px 25px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 10;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
     }
 
     header img {
@@ -55,7 +50,7 @@
     /* ---------- SECTION HERO ---------- */
     .hero {
       text-align: center;
-      padding: 180px 20px 100px;
+      padding: 180px 20px 120px;
       background: rgba(0, 0, 0, 0.45);
     }
 
@@ -64,8 +59,10 @@
       background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-size: 200%;
       animation: shine 4s linear infinite;
-      text-shadow: 0 0 20px rgba(255,215,0,0.7);
+      text-shadow: 0 0 20px rgba(255,215,0,0.6);
+      margin-bottom: 15px;
     }
 
     @keyframes shine {
@@ -76,7 +73,7 @@
     .hero p {
       font-size: 1.2em;
       color: #fff;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .hero button {
@@ -88,7 +85,7 @@
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      box-shadow: 0 0 20px rgba(255,215,0,0.6);
       transition: all 0.3s ease;
     }
 
@@ -205,148 +202,47 @@
     <button onclick="window.location.href='#boutique'">Découvrir la collection</button>
   </section>
 
- <!-- 🩸 SWEET ROUGE -->
-<div class="produit" style="text-align:center; margin-bottom:40px;">
-  <img src="assets/sweet-rouge.jpg" alt="Sweet Rouge" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
-  <h3 style="color:gold; margin-top:10px;">Sweet Rouge</h3>
-  <p style="font-weight:bold; color:#FFD700;">Prix : 49,99 €</p>
-  <p style="color:white;">Édition premium – coupe moderne, tissu doux et confortable.</p>
-</div>
+  <section id="boutique" class="boutique">
+    <h2>Boutique Officielle</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="assets/produits/sweet-rouge.jpg" alt="Sweat Rouge">
+        <h3>Sweat Rouge</h3>
+        <p>Édition 2025 – Style Îles Agency</p>
+      </div>
 
-<!-- ⚫ CREA NOIR & OR -->
-<div class="produit" style="text-align:center; margin-bottom:40px;">
-  <img src="assets/crea-noir-or.jpg" alt="Crea Noir & Or" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
-  <h3 style="color:gold; margin-top:10px;">Crea Noir & Or</h3>
-  <p style="font-weight:bold; color:#FFD700;">Prix : 14,99 €</p>
-  <p style="color:white;">Style minimaliste avec détails dorés élégants.</p>
-</div>
+      <div class="produit">
+        <img src="assets/produits/crea-noir-or.jpg" alt="Créa Noir & Or">
+        <h3>Créa Noir & Or</h3>
+        <p>Élégance dorée, 100% authenticité</p>
+      </div>
 
-<!-- 🧢 CASQUETTE NOIR -->
-<div class="produit" style="text-align:center; margin-bottom:40px;">
-  <img src="assets/casquette-noir.jpg" alt="Casquette Noir" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
-  <h3 style="color:gold; margin-top:10px;">Casquette Noir</h3>
-  <p style="font-weight:bold; color:#FFD700;">Prix : 17,99 €</p>
-  <p style="color:white;">Casquette officielle Les Îles Agency – édition 2025.</p>
-</div>
+      <div class="produit">
+        <img src="assets/produits/casquette-noir.jpg" alt="Casquette Noir">
+        <h3>Casquette Noir</h3>
+        <p>Un style unique signé Les Îles</p>
+      </div>
 
-<!-- 👨‍🍳 CHEMISE CUISINIER -->
-<div class="produit" style="text-align:center; margin-bottom:40px;">
-  <img src="assets/chemise-cuisinier.jpg" alt="Chemise Cuisinier" style="width:200px; border-radius:12px; box-shadow:0 0 15px gold;">
-  <h3 style="color:gold; margin-top:10px;">Chemise Cuisinier</h3>
-  <p style="font-weight:bold; color:#FFD700;">Prix : 59,99 €</p>
-  <p style="color:white;">Chemise professionnelle brodée – design exclusif Les Îles Agency.</p>
-</div>
+      <div class="produit">
+        <img src="assets/produits/chemise-noir.jpg" alt="Chemise Noir">
+        <h3>Chemise Noir</h3>
+        <p>Classe tropicale et raffinée</p>
+      </div>
+
+      <div class="produit">
+        <img src="assets/produits/mina-queen-official.jpg" alt="Mina Queen Official">
+        <h3>Mina Queen Official</h3>
+        <p>Collection Reine des Îles 2025</p>
+      </div>
     </div>
-    <!-- 🔽 Début de la section personnalisation 🔽 -->
-<div class="options-produit" style="text-align:center; margin-bottom:20px;">
-  <h3 style="color: gold;">Personnalise ton article 👕</h3>
 
-<!-- Taille -->
-<label for="taille" style="display:block; margin-top:10px;">Taille :</label>
-<select id="taille" style="padding:8px; border-radius:8px; margin-top:5px;">
-  <option value="3ans">3 ans</option>
-  <option value="4ans">4 ans</option>
-  <option value="6ans">6 ans</option>
-  <option value="8ans">8 ans</option>
-  <option value="10ans">10 ans</option>
-  <option value="12ans">12 ans</option>
-  <option value="14ans">14 ans</option>
-  <option value="XS">XS</option>
-  <option value="S">S</option>
-  <option value="M">M</option>
-  <option value="L">L</option>
-  <option value="XL">XL</option>
-  <option value="XXL">XXL</option>
-  <option value="3XL">3XL</option>
-</select>
-  <!-- Couleur -->
-<label for="couleur" style="display:block; margin-top:10px;">Couleur :</label>
-<select id="couleur" style="padding:8px; border-radius:8px; margin-top:5px;">
-  <option value="blanc">Blanc</option>
-  <option value="noir">Noir</option>
-  <option value="rouge">Rouge</option>
-  <option value="bleu">Bleu</option>
-  <option value="rose">Rose</option>
-  <option value="or">Or</option>
-</select>
-
-  <!-- Texte personnalisé -->
-  <label for="perso" style="display:block; margin-top:10px;">Texte personnalisé (facultatif) :</label>
-  <input id="perso" type="text" placeholder="Ex : Reine des Îles 👑" 
-         style="padding:8px; border-radius:8px; width:80%; margin-top:5px; border:1px solid gold; background:rgba(255,255,255,0.1); color:white;">
-
-  <!-- Bouton commander -->
-  <button 
-    onclick="window.open('https://paypal.me/lesilesagency','_blank')" 
-    style="margin-top:20px; background:gold; color:black; border:none; padding:12px 25px; border-radius:25px; font-weight:bold; cursor:pointer; box-shadow:0 0 15px gold; transition:all 0.3s;">
-    💳 Commander via PayPal
-  </button>
-<!-- 🎨 Section flocage personnalisé -->
-<div id="flocage" style="text-align:center; margin-top:40px;">
-  <h2 style="color:gold;">🩶 Personnalise ton flocage 🩶</h2>
-
-  <p style="color:white;">Entre ton texte personnalisé :</p>
-  <input id="texteFlocage" type="text" placeholder="Ex : Reine des Îles 💫"
-    style="padding:8px; border-radius:10px; width:80%; border:1px solid gold; background:rgba(255,255,255,0.1); color:white;">
-
-  <p style="margin-top:20px; color:white;">Choisis ton modèle :</p>
-
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:15px;">
-    <img src="https://i.ibb.co/WcRtVsf/flocage-blanc.png" alt="Flocage Blanc"
-      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
-      onclick="selectionnerFlocage(this)">
-    <img src="https://i.ibb.co/jrY4m5J/flocage-noir.png" alt="Flocage Noir"
-      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
-      onclick="selectionnerFlocage(this)">
-    <img src="https://i.ibb.co/6RmhkKb/flocage-or.png" alt="Flocage Or"
-      style="width:120px; border-radius:12px; cursor:pointer; border:2px solid transparent;"
-      onclick="selectionnerFlocage(this)">
-  </div>
-
-  <p id="modeleChoisi" style="color:gold; margin-top:15px;"></p>
-</div>
-
-<script>
-function selectionnerFlocage(img) {
-  // Enlève la sélection des autres images
-  document.querySelectorAll('#flocage img').forEach(el => el.style.border = '2px solid transparent');
-  // Ajoute une bordure dorée à celle sélectionnée
-  img.style.border = '2px solid gold';
-  // Affiche le nom du modèle choisi
-  document.getElementById('modeleChoisi').innerText = "Modèle choisi : " + img.alt;
-}
-</script>
-<!-- 🔼 Fin de la section personnalisation 🔼 -->
-
-  <div style="text-align:center; margin-top:20px;">
-    <p>Ou scanne ce QR code :</p>
-    <img src="https://i.ibb.co/5rkymrH/paypal-les-iles-agency.png" 
-         alt="QR Code PayPal Les Îles Agency" 
-         width="200" 
-         style="border-radius:12px; box-shadow:0 0 25px gold;">
-  </div>
-</div>
+    <div class="paypal">
+      <button onclick="window.open('https://www.paypal.com/paypalme/fondateurilesacencylivecuisto','_blank')">
+        💳 Commander via PayPal
+      </button>
     </div>
   </section>
-<section id="apropos" style="padding: 60px 20px; text-align: center; color: white;">
-  <h2 style="color: gold; font-size: 2em; margin-bottom: 10px;">À propos</h2>
-  <p style="max-width: 600px; margin: auto; font-size: 1.1em; line-height: 1.6;">
-    <b>LES ÎLES AGENCY</b> est une marque née de la passion des îles et de l’élégance tropicale.
-    Notre mission est de mettre en avant la fierté et le style unique des îles
-    à travers des collections modernes, authentiques et haut de gamme.
-    Chaque création représente l’esprit, la chaleur et la beauté des îles 🌺.
-  </p>
-</section>
 
-<section id="contact" style="padding: 60px 20px; text-align: center; color: white;">
-  <h2 style="color: gold; font-size: 2em; margin-bottom: 10px;">Contact</h2>
-  <p style="font-size: 1.1em;">📩 Email :
-    <a href="mailto:les.iles.agency.corse@gmail.com" style="color: gold; text-decoration: none;">
-      les.iles.agency.corse@gmail.com
-    </a>
-  </p>
-  <p style="font-size: 1.1em;">📍 Basée à <b>La Réunion</b> — disponible dans toute la France et les DOM 🇫🇷</p>
-</section>
   <footer>
     © 2025 LES ÎLES AGENCY — Tous droits réservés
   </footer>
