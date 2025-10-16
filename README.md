@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LES ÎLES AGENCY — Collection Officielle 2025</title>
   <style>
-    /* ----------- STYLE GLOBAL ----------- */
+    /* ---------- STYLE GLOBAL ---------- */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: white;
-      background: url('assets.couverture.jpg') center/cover no-repeat fixed;
+      background: url('assets/couverture.jpg') center/cover no-repeat fixed;
       backdrop-filter: blur(2px);
+      animation: fadeIn 2s ease;
     }
 
     header {
@@ -24,10 +25,11 @@
       top: 0;
       width: 100%;
       z-index: 10;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     header img {
-      height: 50px;
+      height: 55px;
       border-radius: 10px;
     }
 
@@ -36,26 +38,33 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: 600;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #fff;
+      text-shadow: 0 0 10px #FFD700;
     }
 
-    /* ----------- SECTION HERO ----------- */
+    /* ---------- SECTION HERO ---------- */
     .hero {
       text-align: center;
       padding: 180px 20px 100px;
       background: rgba(0, 0, 0, 0.45);
-      animation: fadeIn 2s ease;
     }
 
     .hero h1 {
-      font-size: 2.5em;
-      color: #FFD700;
-      text-shadow: 0 0 20px #FFD700;
-      margin-bottom: 10px;
+      font-size: 3em;
+      background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 4s linear infinite;
+      text-shadow: 0 0 20px rgba(255,215,0,0.7);
+    }
+
+    @keyframes shine {
+      0% { background-position: -200px; }
+      100% { background-position: 200px; }
     }
 
     .hero p {
@@ -68,12 +77,12 @@
       background: #FFD700;
       color: black;
       border: none;
-      padding: 15px 30px;
+      padding: 15px 35px;
       font-size: 1em;
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
       transition: all 0.3s ease;
     }
 
@@ -83,7 +92,7 @@
       transform: scale(1.05);
     }
 
-    /* ----------- SECTION BOUTIQUE ----------- */
+    /* ---------- SECTION BOUTIQUE ---------- */
     .boutique {
       text-align: center;
       padding: 100px 20px;
@@ -93,8 +102,8 @@
     .boutique h2 {
       font-size: 2em;
       color: #FFD700;
-      text-shadow: 0 0 15px #FFD700;
-      margin-bottom: 50px;
+      text-shadow: 0 0 20px #FFD700;
+      margin-bottom: 40px;
     }
 
     .produits {
@@ -105,30 +114,30 @@
     }
 
     .produit {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
       border-radius: 20px;
       padding: 20px;
       width: 260px;
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(255,215,0,0.3);
     }
 
     .produit:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(255,215,0,0.7);
     }
 
     .produit img {
       width: 100%;
       height: auto;
       border-radius: 15px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .produit h3 {
       color: #FFD700;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .paypal {
@@ -144,12 +153,14 @@
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+      box-shadow: 0 0 20px rgba(255,215,0,0.6);
+      transition: all 0.3s ease;
     }
 
     .paypal button:hover {
       background: white;
       color: #B8860B;
+      transform: scale(1.05);
     }
 
     footer {
@@ -157,16 +168,16 @@
       padding: 30px;
       color: #FFD700;
       font-size: 0.9em;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
+      from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2em; }
+      .hero h1 { font-size: 2.3em; }
       .produit { width: 85%; }
     }
   </style>
