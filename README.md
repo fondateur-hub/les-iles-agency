@@ -288,6 +288,51 @@ selTaille?.addEventListener('change', majTaille);
 majTaille();
 </script>
 
+/* --- Raccorde les champs existants --- */
+const selTaille  = document.getElementById('taille-lovency');
+const selCouleur = document.getElementById('couleur-lovency');
+const inpTexte   = document.getElementById('texte-lovency');
+
+const robeImg   = document.getElementById('robe-base');
+const logoImg   = document.getElementById('robe-logo');
+const txtDevant = document.getElementById('robe-texte');
+const txtDos    = document.getElementById('robe-dos');
+
+/* Met à jour le texte sous le logo en direct */
+function majTexte(){
+  txtDevant.textContent = (inpTexte?.value?.trim() || "L’aventure des Îles Agency");
+}
+inpTexte?.addEventListener('input', majTexte);
+majTexte();
+
+/* Changement de couleur : on swap l’image de base (prévois 1 fichier par couleur) */
+function majCouleur(){
+  const c = selCouleur?.value || 'rouge';
+  // Place tes variantes si tu en as (ex: ...-noir.jpg, ...-blanc.jpg)
+  const mapping = {
+    rouge: 'assets.produits.robe-lovency-rouge.jpg',
+    noir:  'assets.produits.robe-lovency-noir.jpg',
+    blanc: 'assets.produits.robe-lovency-blanc.jpg',
+  };
+  robeImg.src = mapping[c] || mapping.rouge;
+
+  // Couleur du texte (blanc sur foncé, noir sur blanc)
+  txtDevant.style.color = (c === 'blanc') ? '#111' : '#fff';
+}
+selCouleur?.addEventListener('change', majCouleur);
+majCouleur();
+
+/* Optionnel: ajuster taille → on joue un peu sur le scale du logo/texte */
+function majTaille(){
+  const t = (selTaille?.value || 'L').toUpperCase();
+  const scale = (t === 'S') ? 0.9 : (t === 'XL' ? 1.1 : 1.0);
+  logoImg.style.transform = `translate(-50%,-50%) scale(${scale})`;
+  txtDevant.style.transform = `translate(-50%,-50%) scale(${scale})`;
+}
+selTaille?.addEventListener('change', majTaille);
+majTaille();
+</script>
+
   <!-- Options -->
   <div>
     <label for="taille-lovency">Taille :</label>
