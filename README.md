@@ -186,6 +186,17 @@
 
 
         </article>
+<!-- ROBE LOVENCY -->
+<article class="card">
+  <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency rouge – Les Îles Agency">
+  <h3>Robe Lovency</h3>
+  <span class="price">34,99 €</span>
+  <p>Robe moulante rouge. Petit logo doré au cœur avec “L’aventure des Îles Agency”. Dos : “Cordialement, la direction” + email officiel.</p>
+  <button class="btn"
+    onclick="ouvrirPaiement('https://www.paypal.com/ncp/payment/AGHJTXLTEWWUA', true)">
+    🛒 Acheter
+  </button>
+</article>
 
         <!-- Mina Queen (si tu veux plus tard ajouter un prix) -->
         <article class="card">
