@@ -188,6 +188,105 @@
   <h3>Robe Lovency</h3>
   <span class="price">34,99 €</span>
   <p>Robe moulante rouge – design exclusif Les Îles Agency</p>
+<!-- APERÇU ROBE LOVENCY -->
+<div class="robe-preview">
+  <img id="robe-base" src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency">
+  <!-- Petit logo côté cœur -->
+  <img id="robe-logo" src="assets/logo-coeur-blanc.png" alt="Logo" />
+  <!-- Texte sous le logo -->
+  <div id="robe-texte">L’aventure des Îles Agency</div>
+  <!-- Slogan dos (affiché sous la robe en aperçu simple) -->
+  <div id="robe-dos">Cordialement, la Direction – les.iles.agency.corse@gmail.com</div>
+</div>
+
+<style>
+.robe-preview{
+  position:relative;
+  width: 320px;           /* ajuste si besoin */
+  margin: 16px auto;
+}
+.robe-preview img#robe-base{
+  width:100%;
+  display:block;
+  border-radius:12px;
+  box-shadow:0 6px 24px rgba(0,0,0,.25);
+}
+/* Logo cœur placé côté gauche poitrine */
+#robe-logo{
+  position:absolute;
+  top:22%;
+  left:30%;
+  width:54px;            /* taille du logo */
+  transform:translate(-50%,-50%);
+  opacity:.95;
+  pointer-events:none;
+}
+/* Texte sous le logo */
+#robe-texte{
+  position:absolute;
+  top:30%;
+  left:30%;
+  transform:translate(-50%,-50%);
+  font: 700 12px/1.2 "Poppins", system-ui, sans-serif;
+  color:#fff;
+  text-align:center;
+  text-shadow:0 2px 6px rgba(0,0,0,.6);
+  pointer-events:none;
+}
+/* Slogan dos – on le montre sous l’aperçu (simplifié) */
+#robe-dos{
+  margin-top:8px;
+  font: 500 12px/1.4 "Poppins", system-ui, sans-serif;
+  color:#ddd;
+  text-align:center;
+}
+</style>
+
+<script>
+/* --- Raccorde les champs existants --- */
+const selTaille  = document.getElementById('taille-lovency');
+const selCouleur = document.getElementById('couleur-lovency');
+const inpTexte   = document.getElementById('texte-lovency');
+
+const robeImg   = document.getElementById('robe-base');
+const logoImg   = document.getElementById('robe-logo');
+const txtDevant = document.getElementById('robe-texte');
+const txtDos    = document.getElementById('robe-dos');
+
+/* Met à jour le texte sous le logo en direct */
+function majTexte(){
+  txtDevant.textContent = (inpTexte?.value?.trim() || "L’aventure des Îles Agency");
+}
+inpTexte?.addEventListener('input', majTexte);
+majTexte();
+
+/* Changement de couleur : on swap l’image de base (prévois 1 fichier par couleur) */
+function majCouleur(){
+  const c = selCouleur?.value || 'rouge';
+  // Place tes variantes si tu en as (ex: ...-noir.jpg, ...-blanc.jpg)
+  const mapping = {
+    rouge: 'assets.produits.robe-lovency-rouge.jpg',
+    noir:  'assets.produits.robe-lovency-noir.jpg',
+    blanc: 'assets.produits.robe-lovency-blanc.jpg',
+  };
+  robeImg.src = mapping[c] || mapping.rouge;
+
+  // Couleur du texte (blanc sur foncé, noir sur blanc)
+  txtDevant.style.color = (c === 'blanc') ? '#111' : '#fff';
+}
+selCouleur?.addEventListener('change', majCouleur);
+majCouleur();
+
+/* Optionnel: ajuster taille → on joue un peu sur le scale du logo/texte */
+function majTaille(){
+  const t = (selTaille?.value || 'L').toUpperCase();
+  const scale = (t === 'S') ? 0.9 : (t === 'XL' ? 1.1 : 1.0);
+  logoImg.style.transform = `translate(-50%,-50%) scale(${scale})`;
+  txtDevant.style.transform = `translate(-50%,-50%) scale(${scale})`;
+}
+selTaille?.addEventListener('change', majTaille);
+majTaille();
+</script>
 
   <!-- Options -->
   <div>
