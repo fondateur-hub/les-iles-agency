@@ -228,6 +228,7 @@
   </div>
 </article>
 
+
         <!-- Mina Queen (si tu veux plus tard ajouter un prix) -->
         <article class="card">
           <img src="assets.produit.mina-queen-official.jpg" alt="Mina Queen Official">
