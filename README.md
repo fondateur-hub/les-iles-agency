@@ -186,17 +186,54 @@
 
 
         </article>
-<!-- ROBE LOVENCY -->
-<article class="card">
-  <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency rouge – Les Îles Agency">
+<!-- === ROBE LOVENCY === -->
+<article class="card product"
+         data-title="Robe Lovency"
+         data-price="34.99"
+         data-paypal="https://www.paypal.com/ncp/payment/9DPFFZUZG35Z4"
+         data-image="assets.produits.robe-lovency-rouge.jpg">
+  <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency" style="display:none">
+
   <h3>Robe Lovency</h3>
   <span class="price">34,99 €</span>
-  <p>Robe moulante rouge. Petit logo doré au cœur avec “L’aventure des Îles Agency”. Dos : “Cordialement, la direction” + email officiel.</p>
-  <button class="btn"
-    onclick="ouvrirPaiement('https://www.paypal.com/ncp/payment/AGHJTXLTEWWUA', true)">
-    🛒 Acheter
-  </button>
+
+  <!-- Prévisualisation -->
+  <div class="preview">
+    <img class="base" src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency">
+    <div class="tint"></div>
+    <!-- logo coeur -->
+    <img class="logo" src="assets/Logo.png" alt="logo">
+    <!-- texte sous le logo -->
+    <div class="custom-text">L’aventure des Îles Agency</div>
+  </div>
+
+  <!-- Options -->
+  <div class="options">
+    <label>Taille
+      <select class="opt-taille">
+        <option>S</option><option>M</option><option>L</option>
+        <option>XL</option><option>XXL</option>
+      </select>
+    </label>
+
+    <label>Couleur</label>
+    <div class="swatches">
+      <button class="sw" data-color="#c00000" title="Rouge"></button>
+      <button class="sw" data-color="#111111" title="Noir"></button>
+      <button class="sw" data-color="#1144ff" title="Bleu"></button>
+      <button class="sw" data-color="#ffffff" title="Blanc"></button>
+      <button class="sw" data-color="#f5a300" title="Jaune"></button>
+    </div>
+
+    <label>Texte personnalisé (facultatif)</label>
+    <input class="opt-texte" placeholder="Texte poitrine (facultatif)">
+  </div>
+
+  <div class="actions" style="text-align:center; margin-top:10px">
+    <button class="btn payer">Créer mon flocage & Payer</button>
+  </div>
 </article>
+
 
         <!-- Mina Queen (si tu veux plus tard ajouter un prix) -->
         <article class="card">
