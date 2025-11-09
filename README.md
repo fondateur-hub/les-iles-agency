@@ -182,52 +182,57 @@
     Commander
   </a>
 </div>
-<!-- ROBE LOVENCY -->
-<article class="card product"
-         data-title="Robe Lovency"
-         data-price="34.99"
-         data-paypal="https://www.paypal.com/ncp/payment/PDVEASXYV696S"
-         data-image="assets.produits.robe-lovency-rouge.jpg">
-  <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency" style="display:none">
-
+<!-- === ROBE LOVENCY === -->
+<article class="card">
+  <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency" style="width:100%;border-radius:12px;">
   <h3>Robe Lovency</h3>
   <span class="price">34,99 €</span>
-
-  <!-- Prévisualisation -->
-  <div class="preview">
-    <img class="base" src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency">
-    <div class="tint"></div>
-    <img class="logo" src="assets/Logo.png" alt="logo">
-    <div class="custom-text">L’aventure des Îles Agency</div>
-  </div>
+  <p>Robe moulante rouge – design exclusif Les Îles Agency</p>
 
   <!-- Options -->
-  <div class="options">
-    <label>Taille
-      <select class="opt-taille">
-        <option>S</option><option>M</option><option>L</option>
-        <option>XL</option><option>XXL</option>
-      </select>
-    </label>
+  <div>
+    <label for="taille-lovency">Taille :</label>
+    <select id="taille-lovency">
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+      <option>XXL</option>
+    </select>
 
-    <label>Couleur</label>
-    <div class="swatches">
-      <button class="sw" data-color="#c00000" title="Rouge"></button>
-      <button class="sw" data-color="#111111" title="Noir"></button>
-      <button class="sw" data-color="#1144ff" title="Bleu"></button>
-      <button class="sw" data-color="#ffffff" title="Blanc"></button>
-      <button class="sw" data-color="#f5a300" title="Jaune"></button>
-    </div>
+    <label for="couleur-lovency">Couleur :</label>
+    <select id="couleur-lovency">
+      <option>Rouge</option>
+      <option>Noir</option>
+      <option>Blanc</option>
+      <option>Bleu</option>
+      <option>Jaune</option>
+    </select>
 
-    <label>Texte personnalisé (facultatif)</label>
-    <input class="opt-texte" placeholder="Texte poitrine (facultatif)">
+    <label for="texte-lovency">Texte personnalisé (facultatif) :</label>
+    <input type="text" id="texte-lovency" placeholder="Ex: Reine des Îles">
   </div>
 
-  <div class="actions" style="text-align:center; margin-top:10px">
-    <button class="btn payer">🛒 Acheter</button>
+  <div style="margin-top:10px;text-align:center;">
+    <button class="btn" onclick="ouvrirPaiementLovency()">Commander</button>
   </div>
 </article>
 
+<script>
+function ouvrirPaiementLovency() {
+  const taille = document.getElementById('taille-lovency').value;
+  const couleur = document.getElementById('couleur-lovency').value;
+  const texte = document.getElementById('texte-lovency').value || 'Aucun';
+  const resume = `Commande Les Îles Agency\nProduit : Robe Lovency\nTaille : ${taille}\nCouleur : ${couleur}\nFlocage : ${texte}\nDos : Cordialement la direction\nEmail : les.iles.agency.corse@gmail.com`;
+
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(resume);
+    alert("Résumé copié dans le presse-papiers. Il sera ajouté à ta commande PayPal.");
+  }
+
+  window.open("https://www.paypal.com/ncp/payment/PDVEASXYV696S", "_blank");
+}
+</script>
 
         <!-- Mina Queen (si tu veux plus tard ajouter un prix) -->
         <article class="card">
