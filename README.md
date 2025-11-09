@@ -311,7 +311,7 @@
       if(navigator.clipboard){
         navigator.clipboard.writeText(resume).catch(()=>{});
       }
-      const url = 'https://paypal.me/lesilesagency';
+      const url = 'https://www.paypal.com/ncp/payment/9DFPFZUZG35Z4';
       window.open(url,'_blank');
       if(depuisFlocage){
         alert("Résumé copié dans le presse-papiers ✅\nColle-le dans la note PayPal pour qu’on imprime exactement ce que tu veux.");
