@@ -133,10 +133,11 @@
           <h3>Sweat Rouge</h3>
           <span class="price">49,99 €</span>
           <p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/AGHJTXLTEWWUA" target="_blank">
+  <a class="btn" href="https://www.paypal.com/ncp/payment/SF5MU7HEKJD24" target="_blank">
     Commander
   </a>
 </div>
+
 
 
 
@@ -147,11 +148,12 @@
           <img src="assets.produits.crea-noir-or.jpg" alt="Créa Noir & Or">
           <h3>Créa Noir & Or</h3>
           <span class="price">14,99 €</span>
-          <p>Élégance dorée, 100% authenticité.</p><div class="actions" style="margin-top:10px;">
+          <p><div class="actions" style="margin-top:10px;">
   <a class="btn" href="https://www.paypal.com/ncp/payment/JPJQCQ6W3FJC2" target="_blank">
     Commander
   </a>
 </div>
+
 
         </article>
 
@@ -161,10 +163,11 @@
           <h3>Casquette Noir</h3>
           <span class="price">17,99 €</span>
           <p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/JPJQCQ6W3FJC2" target="_blank">
+  <a class="btn" href="https://www.paypal.com/ncp/payment/9DFPFZUZG35Z4" target="_blank">
     Commander
   </a>
 </div>
+
 
 
         </article>
@@ -175,10 +178,11 @@
           <h3>Chemise Cuisinier</h3>
           <span class="price">59,99 €</span>
           <p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/SF5MU7HEKJD24" target="_blank">
+  <a class="btn" href="https://www.paypal.com/ncp/payment/AGHJTXLTEWWUA" target="_blank">
     Commander
   </a>
 </div>
+
 
 
         </article>
