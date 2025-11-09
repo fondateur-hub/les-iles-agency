@@ -182,15 +182,11 @@
     Commander
   </a>
 </div>
-
-
-
-        </article>
-<!-- === ROBE LOVENCY === -->
+<!-- ROBE LOVENCY -->
 <article class="card product"
          data-title="Robe Lovency"
          data-price="34.99"
-         data-paypal="https://www.paypal.com/ncp/payment/9DPFFZUZG35Z4"
+         data-paypal="https://www.paypal.com/ncp/payment/PDVEASXYV696S"
          data-image="assets.produits.robe-lovency-rouge.jpg">
   <img src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency" style="display:none">
 
@@ -201,9 +197,7 @@
   <div class="preview">
     <img class="base" src="assets.produits.robe-lovency-rouge.jpg" alt="Robe Lovency">
     <div class="tint"></div>
-    <!-- logo coeur -->
     <img class="logo" src="assets/Logo.png" alt="logo">
-    <!-- texte sous le logo -->
     <div class="custom-text">L’aventure des Îles Agency</div>
   </div>
 
@@ -230,10 +224,9 @@
   </div>
 
   <div class="actions" style="text-align:center; margin-top:10px">
-    <button class="btn payer">Créer mon flocage & Payer</button>
+    <button class="btn payer">🛒 Acheter</button>
   </div>
 </article>
-
 
         <!-- Mina Queen (si tu veux plus tard ajouter un prix) -->
         <article class="card">
