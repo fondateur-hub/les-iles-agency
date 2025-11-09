@@ -132,11 +132,7 @@
           <img src="assets.produits.sweet-rouge.jpg" alt="Sweat Rouge">
           <h3>Sweat Rouge</h3>
           <span class="price">49,99 €</span>
-          <p>Édition 2025 – Style Îles Agency.</p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/AGHJTXLTEWWUA" target="_blank">
-    Commander
-  </a>
-</div>
+          <p>
 
         </article>
 
@@ -153,11 +149,7 @@
           <img src="assets.produits.casquette-noir.jpg" alt="Casquette Noir">
           <h3>Casquette Noir</h3>
           <span class="price">17,99 €</span>
-          <p>Casquette officielle Les Îles Agency – édition 2025.</p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/JPJQCQ6W3FJC2" target="_blank">
-    Commander
-  </a>
-</div>
+          <p>
 
         </article>
 
@@ -166,11 +158,7 @@
           <img src="assets.produits.chemise-noir.jpg" alt="Chemise Cuisinier">
           <h3>Chemise Cuisinier</h3>
           <span class="price">59,99 €</span>
-          <p>Chemise pro brodée – design exclusif Les Îles Agency.</p><div class="actions" style="margin-top:10px;">
-  <a class="btn" href="https://www.paypal.com/ncp/payment/SF5MU7HEKJD24" target="_blank">
-    Commander
-  </a>
-</div>
+          <p>
 
         </article>
 
